@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cvpfyldwtad6j"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Sheet" type="Sprite2D" parent="."]
+position = Vector2(67, 345)
