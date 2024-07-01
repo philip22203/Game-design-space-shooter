@@ -8,7 +8,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if input.is_action_just_pressed("quit"):
+	if Input.is_action_just_pressed("quit"):
 		get_tree().quit()
-	elif input. is_action_just_pressed("reset"):
+	elif Input. is_action_just_pressed("reset"):
 		get_tree().reload_current_scene()
