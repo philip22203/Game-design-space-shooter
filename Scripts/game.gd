@@ -4,4 +4,4 @@ func _process(delta):
 	if Input.is_action_just_pressed("quit"):
 		get_tree() .quit()
 	elif Input.is_action_just_pressed("reset"):
-		get_
+		get_tree() .reload_current_sscene()
