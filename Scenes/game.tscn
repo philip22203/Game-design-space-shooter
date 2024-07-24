@@ -8,3 +8,6 @@ script = ExtResource("1_q3fy0")
 
 [node name="player" parent="." instance=ExtResource("2_upd3x")]
 position = Vector2(274, 838)
+
+[node name="playerspawnpos" type="Marker2D" parent="."]
+position = Vector2(270, 850)
