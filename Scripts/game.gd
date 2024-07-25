@@ -1,11 +1,11 @@
 extends Node2D
 
-@onready var player_spawn_pos = $PlayerSpawnPos
+@onready var player_spawn_pos = $playerspawnpos
 
 var player = null
 
 func _ready():
-	player = get_tree().get_first_node_in_group("player")
+	player = get_node("player")
 	assert(player!=null)
 	player.global_position = player_spawn_pos.global_position
 
