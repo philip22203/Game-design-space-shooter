@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dl77112r1wir3"]
 
-[ext_resource type="Texture2D" uid="uid://dyjmc5uh2j0r7" path="res://icon.svg" id="1_2y7m6"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_xi2ge"]
+[ext_resource type="Texture2D" uid="uid://eaeh8iror8b3" path="res://Scripts/assets/PNG/playerShip1_orange.png" id="2_u2n3o"]
 
 [node name="player" type="CharacterBody2D" groups=["player"]]
 motion_mode = 1
@@ -10,9 +10,10 @@ script = ExtResource("1_xi2ge")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1, 0)
 rotation = -0.0078036
-scale = Vector2(0.145508, 0.139648)
-texture = ExtResource("1_2y7m6")
+scale = Vector2(0.73, 0.7)
+texture = ExtResource("2_u2n3o")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-scale = Vector2(6.55, 4.95)
-polygon = PackedVector2Array(-11.4504, -11.5152, -10.9924, 11.1111, 9.46565, 10.9091, 9.00763, -12.7273)
+position = Vector2(4, 2.563e-06)
+scale = Vector2(5, 5.125)
+polygon = PackedVector2Array(-3, -5, -3, -2, -6, 0, -8, -1, -8, 4, -7, 3, -3, 4, -2, 5, 0, 5, 1, 4, 5, 3, 6, 4, 6, -1, 4, 0, 0, -2, 1, -5)
