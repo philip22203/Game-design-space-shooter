@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8kk4mri7wx2o"]
+[gd_scene load_steps=4 format=3 uid="uid://c8kk4mri7wx2o"]
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_q3fy0"]
 [ext_resource type="PackedScene" uid="uid://dl77112r1wir3" path="res://Scenes/player.tscn" id="2_upd3x"]
+[ext_resource type="PackedScene" uid="uid://dj8x5fjp5780x" path="res://Scenes/laser.tscn" id="3_63deh"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_q3fy0")
@@ -11,3 +12,6 @@ position = Vector2(274, 838)
 
 [node name="playerspawnpos" type="Marker2D" parent="."]
 position = Vector2(270, 850)
+
+[node name="Laser" parent="." instance=ExtResource("3_63deh")]
+position = Vector2(268, 772)
