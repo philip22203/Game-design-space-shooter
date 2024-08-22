@@ -15,3 +15,5 @@ position = Vector2(270, 850)
 
 [node name="Laser" parent="." instance=ExtResource("3_63deh")]
 position = Vector2(268, 772)
+
+[node name="LaserContainer" type="Node2D" parent="."]
