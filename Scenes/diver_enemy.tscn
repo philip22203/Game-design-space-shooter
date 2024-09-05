@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://dph6v7x83eq4k" path="res://assets/PNG/Enemies/enemyRed5.png" id="2_5yc8r"]
 
 [node name="DiverEnemy" instance=ExtResource("1_p0a4v")]
-speed = 410
 hp = 1
+speed = 410
 points = 200
 
 [node name="Sprite" parent="." index="0"]
