@@ -4,10 +4,11 @@ signal laser_shot(laser_scene, location)
 signal killed
 
 @export var speed = 300
+@export var rate_of_fire := 0.25
 
 @onready var muzzle = $Muzzle
 
-var laser_scene = preload("res://Scenes/laser.tscn")
+var laser_scene = preload("res://scenes/laser.tscn")
 
 var shoot_cd := false
 
@@ -16,7 +17,7 @@ func _process(delta):
 		if !shoot_cd:
 			shoot_cd = true
 			shoot()
-			await get_tree().create_timer(0.25).timeout
+			await get_tree().create_timer(rate_of_fire).timeout
 			shoot_cd = false
 
 func _physics_process(delta):
@@ -28,7 +29,6 @@ func _physics_process(delta):
 
 func shoot():
 	laser_shot.emit(laser_scene, muzzle.global_position)
-
 
 func die():
 	killed.emit()
