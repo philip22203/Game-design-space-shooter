@@ -1,5 +1,4 @@
-extends CharacterBody2D
-class_name Player
+class_name Player extends CharacterBody2D
 
 signal laser_shot(laser_scene, location)
 signal killed
